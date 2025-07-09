@@ -65,7 +65,7 @@ public class Main {
         us1.addProfessor(p1);
         us1.addProfessor(p2);
 
-        university.printReport();
+        us1.printReport();
 
     }
 }
