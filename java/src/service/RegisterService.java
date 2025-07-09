@@ -3,8 +3,6 @@ package service;
 import model.Course;
 import model.Register;
 
-import java.util.ArrayList;
-
 public class RegisterService {
     private Register reg;
 

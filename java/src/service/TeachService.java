@@ -3,8 +3,6 @@ package service;
 import model.Course;
 import model.Teach;
 
-import java.util.ArrayList;
-
 public class TeachService {
     private Teach teach;
 
