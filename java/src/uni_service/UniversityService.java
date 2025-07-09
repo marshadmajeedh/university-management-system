@@ -3,21 +3,29 @@ package uni_service;
 import model.Course;
 import model.Professor;
 import model.Student;
+import model.University;
 
 public class UniversityService {
-    private Add add;
+    private final Add university;
 
-    public UniversityService(Add add) {
-        this.add = add;
+    public UniversityService(Add university) {
+        this.university = university;
     }
 
     public void addStudent(Student s) {
-        add.addStudent(s);
+        university.addStudent(s);
     }
     public void addProfessor(Professor p) {
-        add.addProfessor(p);
+        university.addProfessor(p);
     }
     public void addCourse(Course c) {
-        add.addCourse(c);
+        university.addCourse(c);
     }
+
+    public void printReport() {
+        if (university instanceof PrintReport) {
+            ((PrintReport) university).printReport();
+        }
+    }
+
 }

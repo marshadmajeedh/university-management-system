@@ -1,10 +1,11 @@
 package model;
 
 import uni_service.Add;
+import uni_service.PrintReport;
 
 import java.util.ArrayList;
 
-public class University implements Add {
+public class University implements Add, PrintReport {
     ArrayList<Student> students;
     ArrayList<Professor> professors;
     ArrayList<Course> courses;
@@ -30,6 +31,7 @@ public class University implements Add {
         courses.add(course);
     }
 
+    @Override
     public void printReport() {
         System.out.println ("Student details :");
         for (Student student : students) {
