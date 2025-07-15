@@ -1,11 +1,8 @@
 import model.*;
 import service.UniversityService;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         Student student1 = new Student("IT24102580","Ahamed","Ahamed@gmail.com");
         Student student2 = new Student("IT23101380","Marshad","Marshad@gmail.com");

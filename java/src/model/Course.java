@@ -18,10 +18,6 @@ public class Course implements PrintDetails, Enroll {
         return title;
     }
 
-    public Professor getAssignedProfessor() {
-        return assignedProfessor;
-    }
-
     @Override
     public void enrollStudent(Student student) {
         enrolledStudents.add(student);
