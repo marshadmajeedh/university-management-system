@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Professor extends Person implements PrintDetails,Teach {
 
-    private ArrayList<Course> assignedCourses;
+    private final ArrayList<Course> assignedCourses;
 
     public Professor(String id, String name, String email) {
         super(id, name, email);

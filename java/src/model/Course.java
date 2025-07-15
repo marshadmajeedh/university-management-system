@@ -3,34 +3,17 @@ package model;
 import java.util.ArrayList;
 
 public class Course implements PrintDetails, Enroll {
-    private String courseCode;
-    private String title ;
-    private Professor assignedProfessor;
-    private ArrayList<Student> enrolledStudents;
+    private final String courseCode;
+    private final String title ;
+    private final Professor assignedProfessor;
+    private final ArrayList<Student> enrolledStudents;
 
-    public Course(String courseCode, String title, Professor assignedProfessor) {
+    public Course(String courseCode, String title,Professor assignedProfessor) {
         this.courseCode = courseCode;
         this.title = title;
         this.assignedProfessor = assignedProfessor;
         this.enrolledStudents = new ArrayList<>();
     }
-
-    public void setCourseCode(String courseCode) {
-        this.courseCode = courseCode;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAssignedProfessor(Professor assignedProfessor) {
-        this.assignedProfessor = assignedProfessor;
-    }
-
-    public String getCourseCode() {
-        return courseCode;
-    }
-
     public String getTitle() {
         return title;
     }

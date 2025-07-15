@@ -1,11 +1,9 @@
 package model;
-
-import uni_service.Add;
-import uni_service.PrintReport;
+import uni_service.UniversityAddAndPrint;
 
 import java.util.ArrayList;
 
-public class University implements Add, PrintReport {
+public class University implements UniversityAddAndPrint {
     ArrayList<Student> students;
     ArrayList<Professor> professors;
     ArrayList<Course> courses;
